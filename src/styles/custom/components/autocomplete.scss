@@ -1,0 +1,21 @@
+.v-autocomplete {
+    .v-field__prepend-inner {
+        margin-inline: 16px;
+    }
+
+    .v-field__input {
+        padding-block: 0;
+
+        > input {
+            font-size: 24px;
+            inset: 0;
+            font-weight: bold;
+            opacity: 1;
+            
+            &::placeholder {
+                opacity: 1;
+                color: #4f4f4f;
+            }
+        }
+    }
+}
