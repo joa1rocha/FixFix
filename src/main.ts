@@ -6,6 +6,8 @@
 
 // Components
 import App from './App.vue'
+import api from './api'
+import Manager from './api/Manager'
 
 // Composables
 import { VueElement, createApp } from 'vue'
@@ -14,6 +16,10 @@ import { VueElement, createApp } from 'vue'
 import { registerPlugins } from '@/plugins'
 
 const app = createApp(App);
+
+// axios
+app.provide('$http', api);
+app.provide('$api', new Manager());
 
 registerPlugins(app)
 

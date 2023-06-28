@@ -1,6 +1,6 @@
 <template>
   <v-footer
-    class="text-center d-flex flex-column justify-end pa-7"
+    class="text-center d-flex flex-column justify-end pa-3"
     color="transparent"
     flat
   >
